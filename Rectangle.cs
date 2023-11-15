@@ -33,12 +33,19 @@ namespace Laba_1
             get { return y2; }
             set { y2 = value; }
         }
+        public Rectangle(int min, int max)
+        {
+            x1 = new Random().Next(min, max);
+            y1 = new Random().Next(min, max);
+            x2 = x1 + new Random().Next(1, max - min);
+            y2 = y1 + new Random().Next(1, max - min);
+        }
         public Rectangle()
         {
-            x1 = new Random().Next(-5, 5);
-            y1 = new Random().Next(-5,5);
-            x2 = x1 + new Random().Next(1, 10);
-            y2 = y1 + new Random().Next(1, 10);
+            x1 = new Random().Next(-10, 10);
+            y1 = new Random().Next(-10, 10);
+            x2 = x1 + new Random().Next(1, 20);
+            y2 = y1 + new Random().Next(1, 20);
         }
         public Rectangle(int x1, int y1, int x2, int y2)
         {

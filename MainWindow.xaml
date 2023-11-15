@@ -6,7 +6,7 @@
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         xmlns:local="clr-namespace:Laba_1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="620" Width="800">
+        Title="MainWindow" Height="620" Width="1200">
     <Grid>
         <Label Content="Введіть координати лівої верхньої вершини прямокутника" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift"/>
         <TextBox x:Name="x1" HorizontalAlignment="Left" Margin="50,45,0,0" TextWrapping="Wrap" Text="-5" VerticalAlignment="Top" Width="120" FontSize="18" FontFamily="Bahnschrift"/>
@@ -29,13 +29,13 @@
 
         <Label Content="Генерація випадкових значень координат в діапазоні від -10 до 10" HorizontalAlignment="Left" Margin="10,317,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift"/>
 
-        <Label Content="Ліва нижня точка" HorizontalAlignment="Left" Margin="10,353,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift"/>
+        <Label Content="Ліва нижня точка" HorizontalAlignment="Left" Margin="10,354,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift"/>
         <Label Content="x = " HorizontalAlignment="Left" Margin="10,388,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
         <Label x:Name="rand_x1" HorizontalAlignment="Left" Margin="50,388,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
         <Label Content="y = " HorizontalAlignment="Left" Margin="10,428,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
         <Label x:Name="rand_y1" HorizontalAlignment="Left" Margin="50,428,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
 
-        <Label Content="Права верхня точка" HorizontalAlignment="Left" Margin="180,355,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift"/>
+        <Label Content="Права верхня точка" HorizontalAlignment="Left" Margin="180,354,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift"/>
         <Label Content="x = " HorizontalAlignment="Left" Margin="180,388,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
         <Label x:Name="rand_x2" HorizontalAlignment="Left" Margin="230,388,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
         <Label Content="y = " HorizontalAlignment="Left" Margin="180,428,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
@@ -47,6 +47,26 @@
         <Label x:Name="rand_width" HorizontalAlignment="Left" Margin="100,488,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
         <Label x:Name="rand_height" HorizontalAlignment="Left" Margin="100,518,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
 
+        <Label Content="Генерація випадкових значень координат в діапазоні від min до max" HorizontalAlignment="Left" Margin="590,10,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift"/>
+        <TextBox x:Name="min_GUI" HorizontalAlignment="Left" Margin="650,45,0,0" TextWrapping="Wrap" Text="-5" VerticalAlignment="Top" Width="120" FontSize="18" FontFamily="Bahnschrift"/>
+        <Label Content="min = " HorizontalAlignment="Left" Margin="590,40,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
+        <TextBox x:Name="max_GUI" HorizontalAlignment="Left" Margin="650,85,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="120" FontSize="18" FontFamily="Bahnschrift"/>
+        <Label Content="max = " HorizontalAlignment="Left" Margin="590,80,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
+        <Label Content="Розмір сторін" HorizontalAlignment="Left" Margin="590,226,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift"/>
+        <Label Content="Ширина = " HorizontalAlignment="Left" Margin="590,256,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift"/>
+        <Label Content="Висота = " HorizontalAlignment="Left" Margin="590,296,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift"/>
+        <Label x:Name="min_max_rand_width" HorizontalAlignment="Left" Margin="700,256,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
+        <Label x:Name="min_max_rand_height" HorizontalAlignment="Left" Margin="700,296,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
+        <Label Content="Ліва нижня точка" HorizontalAlignment="Left" Margin="590,120,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift"/>
+        <Label Content="Права верхня точка" HorizontalAlignment="Left" Margin="760,120,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift"/>
+        <Label Content="x = " HorizontalAlignment="Left" Margin="590,154,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
+        <Label Content="y = " HorizontalAlignment="Left" Margin="590,194,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
+        <Label Content="x = " HorizontalAlignment="Left" Margin="760,154,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
+        <Label Content="y = " HorizontalAlignment="Left" Margin="760,194,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
+        <Label x:Name="min_max_rand_x1" HorizontalAlignment="Left" Margin="630,154,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
+        <Label x:Name="min_max_rand_y1" HorizontalAlignment="Left" Margin="630,194,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
 
+        <Label x:Name="min_max_rand_x2" HorizontalAlignment="Left" Margin="800,154,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
+        <Label x:Name="min_max_rand_y2" HorizontalAlignment="Left" Margin="800,194,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
     </Grid>
 </Window>

@@ -27,8 +27,8 @@ namespace Laba_1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Rectangle rectangle, rand_rectangle;
-            int x_1, x_2, y_1, y_2;
+            Rectangle rectangle, rand_rectangle, min_max_rand_rectangle;
+            int x_1, x_2, y_1, y_2, min, max;
             try
             {
                 x_1 = Convert.ToInt32(x1.Text);
@@ -46,6 +46,17 @@ namespace Laba_1
                 rand_y2.Content = rand_rectangle.Y_2;
                 rand_width.Content = rand_rectangle.Width;
                 rand_height.Content = rand_rectangle.Height;
+
+                min = Convert.ToInt32(min_GUI.Text);
+                max = Convert.ToInt32(max_GUI.Text);
+
+                min_max_rand_rectangle = new Rectangle(min, max);
+                min_max_rand_x1.Content = min_max_rand_rectangle.X_1;
+                min_max_rand_y1.Content = min_max_rand_rectangle.Y_2;
+                min_max_rand_x2.Content = min_max_rand_rectangle.X_2;
+                min_max_rand_y2.Content = min_max_rand_rectangle.Y_2;
+                min_max_rand_width.Content = min_max_rand_rectangle.Width;
+                min_max_rand_height.Content = min_max_rand_rectangle.Height;
             }
             catch { MessageBox.Show("Помилка при введенні даних"); }
         }
